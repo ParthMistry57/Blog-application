@@ -157,31 +157,3 @@ The frontend will be running on `http://localhost:3000`
 3. **Browse Posts**: View all published posts with search and filter options
 4. **Interact**: Like posts and view engagement metrics
 5. **Manage Content**: Edit or delete your own posts
-
-## Development
-
-### Backend Development
-
-- Uses nodemon for auto-restart during development
-- MongoDB connection with Mongoose ODM
-- JWT-based authentication
-- RESTful API design
-
-### Frontend Development
-
-- React with functional components and hooks
-- Material-UI for consistent design
-- Context API for global state management
-- Responsive design for all screen sizes
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is licensed under the ISC License.
