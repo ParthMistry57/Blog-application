@@ -1,0 +1,245 @@
+/* CreatePost Component Styles */
+
+.create-post-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.create-post-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.create-post-content:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.title-input {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+.title-input .MuiInputBase-input {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  padding: 1rem !important;
+}
+
+.content-textarea {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif !important;
+  line-height: 1.8 !important;
+  font-size: 1.1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.content-textarea .MuiInputBase-input {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif !important;
+  line-height: 1.6 !important;
+  font-size: 1rem !important;
+  padding: 1.5rem !important;
+  transition: all 0.3s ease !important;
+  resize: vertical !important;
+  width: 600px !important;
+  height: 400px !important;
+  min-height: 500px !important;
+  max-height: 800px !important;
+  max-width: 600px !important;
+}
+
+.sidebar-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  min-height: auto;
+}
+
+.sidebar-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.image-preview {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.image-preview:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.action-button {
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.publish-button {
+  background: linear-gradient(45deg, #2196f3 30%, #21cbf3 90%) !important;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4) !important;
+}
+
+.publish-button:hover {
+  background: linear-gradient(45deg, #1976d2 30%, #1cb5e0 90%) !important;
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6) !important;
+}
+
+.tag-chip {
+  border-radius: 20px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.tag-chip:hover {
+  transform: scale(1.05);
+}
+
+.auto-save-indicator {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.word-count {
+  background: rgba(33, 150, 243, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1976d2;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .title-input .MuiInputBase-input {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-input .MuiInputBase-input {
+    font-size: 1.5rem !important;
+  }
+
+  .content-textarea .MuiInputBase-input {
+    font-size: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  .create-post-header {
+    padding: 1.5rem;
+  }
+}
+
+/* Custom scrollbar for textarea */
+.content-textarea .MuiInputBase-input::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content-textarea .MuiInputBase-input::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.content-textarea .MuiInputBase-input::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.content-textarea .MuiInputBase-input::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Dynamic textarea sizing */
+.content-textarea .MuiInputBase-root {
+  overflow: hidden !important;
+  transition: height 0.3s ease !important;
+  max-width: 100% !important;
+}
+
+.content-textarea .MuiInputBase-input {
+  overflow-y: auto !important;
+  resize: none !important;
+  max-width: 100% !important;
+}
+
+/* Smooth height transitions */
+.content-textarea {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  max-width: 100% !important;
+}
+
+/* Vertical-oriented textarea */
+.content-textarea {
+  width: 600px !important;
+  max-width: 600px !important;
+  height: 500px !important;
+  min-height: 500px !important;
+  max-height: 800px !important;
+}
+
+/* Loading animation for buttons */
+.button-loading {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade in animation for new elements */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
